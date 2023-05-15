@@ -1,21 +1,31 @@
+/* Font header */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
-    color: gray;
+    color: whitesmoke;
+}
+
+.header {
+    height: 450px;
+    width: auto;
+    background-image: url(image/Desktop-Wallpaper.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #04061D;
 }
 
 .nav {
+    color: gray; 
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: space-between;
-    
-    color: gray;
-    background-color: black;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .nav-item {
@@ -33,6 +43,7 @@ a {
 
 /* CIT (Software Engineering) */
 .profile-name {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: absolute;
     width: 160px;
     bottom: 30px;
@@ -51,7 +62,7 @@ a {
     border-radius: 5px;
     padding: 7px 15px 7px 15px;
     margin-top: -7px;
-    box-sizing: border-box;
+    
     background-color: orange;
 }
 
