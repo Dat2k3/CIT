@@ -1,0 +1,83 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    
+    color: gray;
+    background-color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-item {
+    display: inline-block;
+    margin: auto 16px;
+}
+
+.nav-item h4 {
+    color: whitesmoke;
+}
+
+.nav-list {
+    position: relative;
+}
+
+/* CIT (Software Engineering) */
+.profile-name {
+    position: absolute;
+    width: 160px;
+    bottom: 30px;
+    left: 100px;
+}
+
+/* Controllers Home, Illustration, Source, About us */
+.controller {
+    position: relative;
+    bottom: -40px;
+    font-size: 18px;
+}
+
+/* button About us*/
+#btn-controller {
+    border-radius: 5px;
+    padding: 7px 15px 7px 15px;
+    margin-top: -7px;
+    box-sizing: border-box;
+    background-color: orange;
+}
+
+#btn-controller a {
+    color: black;
+}
+
+/* Controller ICON for mobile */
+.controller-icon {
+    display: none;
+    position: relative;
+    bottom: -40px;
+    font-size: 12px;
+}
+
+/* Mobile width < 740px */
+@media only screen and (max-width: 740px) {
+    .controller-icon {
+        display: inline-flex;
+        margin: auto 14px;
+        left: -20px;
+    }
+
+    .profile-name, .controller {
+        display: none;
+    }
+}
+
+
