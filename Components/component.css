@@ -12,13 +12,14 @@ a {
     color: whitesmoke;
 }
 
+/* HEADER */
 .header {
     height: 450px;
     width: auto;
     background-image: url(image/Desktop-Wallpaper.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-color: #04061D;
+    background-color: #04061D;  
 }
 
 .nav {
@@ -61,8 +62,6 @@ a {
 #btn-controller {
     border-radius: 5px;
     padding: 7px 15px 7px 15px;
-    margin-top: -7px;
-    
     background-color: orange;
 }
 
@@ -76,6 +75,72 @@ a {
     position: relative;
     bottom: -40px;
     font-size: 12px;
+}
+
+/* Hover */
+.controller a:hover{
+    color: #04061D;
+}
+
+.controller-icon a:hover{
+    color: #04061D;
+}
+
+#btn-controller:hover{
+    background-color: rgba(255, 166, 0, 0.9);
+}
+
+/* FOOTER */
+.footer {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    background-color: #04061D;
+}
+
+.part_2 {
+    justify-content: space-between;
+}
+
+/* Title Find us, Call us and Mail us */
+.title-footer h6 {
+    color: whitesmoke;
+}
+
+/* Icon of title below */
+.icon-footer a {
+    color: orange;
+}
+
+.icon-footer span {
+    font-size: 34px;
+}
+
+.icon-contact a {
+    color: orange;
+}
+
+.icon-contact i {
+    font-size: 34px;
+}
+
+.margin_contact {
+    margin: 10px 0 10px 40px;
+}
+
+.margin_footer {
+    margin: auto 0 auto 40px;
+}
+
+.footer-line {
+    border-top: 1px solid whitesmoke;
+}
+
+/* CIT Introduction */
+#content-team {
+    width: 100%;
+    padding: 0 16px 16px 16px;
 }
 
 /* Mobile width < 740px */
