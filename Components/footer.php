@@ -72,14 +72,14 @@
                 </li>
                 <br>
 
-                <li class="nav-item title-footer margin_contact">
-                    <p><small style="font-size: 15px;">Home</small></p>
-                    <p><small style="font-size: 15px;">Portfolio</small></p>
+                <li class="nav-item link-footer margin_contact">
+                    <a href=""><p><small style="font-size: 15px;">Home</small></p></a>
+                    <a href=""><p><small style="font-size: 15px;">Portfolio</small></p></a>
                 </li>
 
-                <li class="nav-item title-footer margin_contact">
-                    <p><small style="font-size: 15px;">Source</small></p>
-                    <p><small style="font-size: 15px;">Contact</small></p>
+                <li class="nav-item link-footer margin_contact">
+                    <a href=""><p><small style="font-size: 15px;">Source</small></p></a>
+                    <a href=""><p><small style="font-size: 15px;">Contact</small></p></a>
                 </li>
             </ul>
         </div>

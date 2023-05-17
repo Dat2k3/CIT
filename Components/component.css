@@ -143,6 +143,25 @@ a {
     padding: 0 16px 16px 16px;
 }
 
+/* Links */
+.link-footer p {
+    color: gray;
+}
+
+/* Hover */
+.link-footer p:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+.icon-footer span:hover {
+    color: rgba(255, 166, 0, 0.8);
+}
+
+.icon-contact i:hover {
+    color: rgba(255, 166, 0, 0.8);
+}
+
 /* Mobile width < 740px */
 @media only screen and (max-width: 740px) {
     .controller-icon {
@@ -154,6 +173,31 @@ a {
     .profile-name, .controller {
         display: none;
     }
+
+    .icon-contact i {
+        font-size: 20px;
+    }
+
+    .margin_contact {
+        margin: 6px 0 auto 21px;
+
+    }
+
+    .icon-footer span {
+        font-size: 30px;
+    }
+
+    .margin_footer {
+        margin: auto 16px;
+    }
+
+    .title-footer {
+        display: none;
+    }
+
+    .part_3 .icon-footer {
+        font-size: 12px;
+    } 
 }
 
 
