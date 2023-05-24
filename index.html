@@ -7,10 +7,7 @@
     <title>CIT Team</title>
     <link rel="stylesheet" href="Components/component.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-
-    <script> 
+    <script>
         $(function(){
           $("#header").load("Components/header.html"); 
           $("#footer").load("Components/footer.html"); 
@@ -19,7 +16,29 @@
 </head>
 <body>
     <div id="header"></div>
+    <div class="container">
+        <div class="project oop">
+            <div class="description">
+                <h1>Object Oriented Programming</h1>
+                <p>OOP stands for <strong>Object-Oriented Programming</strong>.</p>
+                <p>Procedural programming is about writing procedures or methods that perform operations on the data, while object-oriented programming is about creating objects that contain both data and methods.</p>
+                <p>Object-oriented programming has several advantages over procedural programming:</p>
+                <ul>
+                    <li>OOP is faster and easier to execute</li>
+                    <li>OOP provides a clear structure for the programs</li>
+                    <li>OOP helps to keep the Java code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug</li>
+                    <li>OOP makes it possible to create full reusable applications with less code and shorter development time</li>
+                </ul>
+                <p><strong>Tip:</strong> The "Don't Repeat Yourself" (DRY) principle is about reducing the repetition of code. You should extract out the codes that are common for the application, and place them at a single place and reuse them instead of repeating it.</p>
+                <a href="">
+                    <p class="detail">Details</p>
+                </a>
+            </div>
 
+            <div class="illustrate"></div>
+        </div>
+    
+    </div>
 
     <div id="footer"></div>
 </body>
