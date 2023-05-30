@@ -240,6 +240,8 @@ body {
 
 /* Mobile width < 740px */
 @media only screen and (max-width: 740px) {
+    
+    /* HEADER */
     .header {
         height: 300px;
     }
@@ -254,30 +256,50 @@ body {
         display: none;
     }
 
-    .icon-contact i {
+    /* FOOTER */
+    .header__nav__nav-list .icon-contact i {
         font-size: 20px;
     }
 
-    .margin_contact {
+    .header__nav__nav-list .margin_contact {
         margin: 6px 0 auto 21px;
 
     }
 
-    .icon-footer span {
+    .header__nav__nav-list .icon-footer span {
         font-size: 30px;
     }
 
-    .margin_footer {
+    .header__nav__nav-list .margin_footer {
         margin: auto 16px;
     }
 
-    .title-footer {
+    .header__nav__nav-list .title-footer {
         display: none;
     }
 
-    .part_3 .icon-footer {
+    .header__nav__nav-list .icon-footer {
         font-size: 12px;
-    } 
+    }
+
+    /* BODY */
+    .container__project{
+        max-height: 220px;
+        margin: 10px 10px;
+    }
+
+    .container__project__description{
+        margin: 10px;
+        line-height: 14px;
+    }
+
+    .container__project__description h2 {
+        font-size: 15px;
+    }
+
+    .container__project__description p {
+        font-size: 8px;
+    }
 }
 
 
