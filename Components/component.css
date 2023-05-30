@@ -1,6 +1,17 @@
 /* Font header */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
+
+/* 
+    ---- HEADER ----
+    text-color: #DCDFF9
+    background-color: #04061D
+
+    ---- BODY ----
+    background-color: #111527
+    text-color: #95B1AF
+*/
+
 * {
     padding: 0;
     margin: 0;
@@ -9,41 +20,44 @@
 
 a {
     text-decoration: none;
-    color: whitesmoke;
+    color: #DCDFF9;
 }
 
 /* HEADER */
 .header {
-    height: 450px;
-    width: auto;
+    height: 760px;
     background-image: url(image/Desktop-Wallpaper.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: #04061D;  
 }
 
-.nav {
+.header__nav {
     color: gray; 
-    font-family: 'Poppins', sans-serif;
     display: flex;
+    font-family: 'Poppins', sans-serif;
     justify-content: space-between;
 }
 
-.nav-item {
+.header__nav__nav-list {
+    position: relative;
+}
+
+.header__nav__nav-list__nav-item {
     display: inline-block;
     margin: auto 16px;
 }
 
-.nav-item h4 {
-    color: whitesmoke;
+.header__nav__nav-list__nav-item h4 {
+    color: #DCDFF9;
 }
 
-.nav-list {
-    position: relative;
+.header__nav__nav-list__nav-item #language {
+    font-size: small;
 }
 
 /* CIT (Software Engineering) */
-.profile-name {
+.header__nav__nav-list .profile-name {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: absolute;
     width: 160px;
@@ -52,25 +66,25 @@ a {
 }
 
 /* Controllers Home, Illustration, Source, About us */
-.controller {
+.header__nav__nav-list .controller {
     position: relative;
     bottom: -40px;
     font-size: 18px;
 }
 
 /* button About us*/
-#btn-controller {
+#header__nav__nav-list__nav-item__btn-controller {
     border-radius: 5px;
     padding: 7px 15px 7px 15px;
-    background-color: orange;
+    background-color: #D27062;
 }
 
-#btn-controller a {
+#header__nav__nav-list__nav-item__btn-controller a {
     color: black;
 }
 
 /* Controller ICON for mobile */
-.controller-icon {
+.header__nav__nav-list .controller-icon {
     display: none;
     position: relative;
     bottom: -40px;
@@ -78,16 +92,16 @@ a {
 }
 
 /* Hover */
-.controller a:hover{
-    color: #04061D;
+.header__nav__nav-list .controller a:hover{
+    color: #8F91AA;
 }
 
-.controller-icon a:hover{
-    color: #04061D;
+.header__nav__nav-list .controller-icon a:hover{
+    color: #8F91AA;
 }
 
-#btn-controller:hover{
-    background-color: rgba(255, 166, 0, 0.9);
+#header__nav__nav-list__nav-item__btn-controller:hover{
+    background-color: #B05246;
 }
 
 /* FOOTER */
@@ -104,129 +118,139 @@ a {
 }
 
 /* Title Find us, Call us and Mail us */
-.title-footer h6 {
-    color: whitesmoke;
+.header__nav__nav-list .title-footer h6 {
+    color: #DCDFF9;
 }
 
 /* Icon of title below */
-.icon-footer a {
+.header__nav__nav-list .icon-footer a {
     color: orange;
 }
 
-.icon-footer span {
+.header__nav__nav-list .icon-footer span {
     font-size: 34px;
 }
 
-.icon-contact a {
+.header__nav__nav-list .icon-contact a {
     color: orange;
 }
 
-.icon-contact i {
+.header__nav__nav-list .icon-contact i {
     font-size: 34px;
 }
 
-.margin_contact {
+.header__nav__nav-list .margin_contact {
     margin: 10px 0 10px 40px;
 }
 
-.margin_footer {
+.header__nav__nav-list .margin_footer {
     margin: auto 0 auto 40px;
 }
 
 .footer-line {
-    border-top: 1px solid whitesmoke;
+    border-top: 1px solid #DCDFF9;
 }
 
 /* CIT Introduction */
-#content-team {
+.header__nav__nav-list #content-team {
     width: 100%;
     padding: 0 16px 16px 16px;
+    text-align: justify;
 }
 
 /* Links */
-.link-footer p {
+.header__nav__nav-list .link-footer p {
     color: gray;
 }
 
 /* Hover */
-.link-footer p:hover {
-    color: whitesmoke;
+.header__nav__nav-list .link-footer p:hover {
+    color: #DCDFF9;
     text-decoration: underline;
 }
 
-.icon-footer span:hover {
+.header__nav__nav-list .icon-footer span:hover {
     color: rgba(255, 166, 0, 0.8);
 }
 
-.icon-contact i:hover {
+.header__nav__nav-list .icon-contact i:hover {
     color: rgba(255, 166, 0, 0.8);
 }
 
 /* BODY */
 body {
-    background-color: #04061D;
+    background-color: #303347;
 }
 
 .container {
     margin: 20px 20px;
 }
 
-.container .project{
-    display: inline-flex;
-    background-color: rgba(40, 43, 78, 0.35);
-    border-radius: 20px;
+#container__title-page {
+    text-align: center;
+    color: #DCDFF9;
+    margin-top: 30px;
 }
 
-.container .project .description{
+.container__project{
+    display: inline-flex;
+    background-color: #111527;
+    border-radius: 20px;
+    margin: 16px 16px;
+}
+
+.container__project__description{
     width: 50%;
     margin: 20px;
+    line-height: 35px;
 }
 
-.container .oop .illustrate {
+.container__project__illustrate {
     width: 50%;
-    background-image: url(image/oop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.container .project .description .detail{
-    color:white;
+.container__project__description #detail {
+    color:#DCDFF9;
     margin-bottom: 18px;
     text-decoration: underline;
     text-align: end;
     margin: 0;
 }
 
-.container .project .description h1{
+.container__project__description h2{
     font-family: 'Playfair Display SC';
-    color:cadetblue;
+    color:#5DB5A6;
     margin-bottom: 16px;
 }
 
-.container .project .description p{
+.container__project__description p{
     font-family: 'Quicksand', sans-serif;
     margin: 10px auto;
-    color:lightslategrey;
+    color:#95B1AF;
     font-size: 16px;
     text-align: justify;
 }
 
-.container .project .description ul li{
-    font-family: 'Quicksand', sans-serif;
-    margin: 10px 18px;
-    color: lightslategrey;
+.d-none {
+    display: none;
 }
 
 /* Mobile width < 740px */
 @media only screen and (max-width: 740px) {
-    .controller-icon {
+    .header {
+        height: 300px;
+    }
+
+    .header__nav__nav-list .controller-icon {
         display: inline-flex;
         margin: auto 14px;
         left: -20px;
     }
 
-    .profile-name, .controller {
+    .header__nav__nav-list .profile-name, .controller {
         display: none;
     }
 
